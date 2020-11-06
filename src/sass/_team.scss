@@ -1,0 +1,132 @@
+.team {
+    margin-bottom: 19rem;
+    overflow: hidden;
+    &__blue {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        margin-right: -59.4rem;
+        background-color: $blue;
+        z-index: 1;
+    }
+    &__inner {
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+    &__main-title {
+        margin-bottom: 2.2rem;
+    }
+    &__slider {
+        position: relative;
+    }
+    &__slide {
+        display: flex;
+        .team__content, img {
+            opacity: 0;
+            transition:  opacity 3000ms;
+        }
+        &.swiper-slide-active .team__content,
+        &.swiper-slide-active img {
+            opacity: 1;
+            transition:  opacity 3000ms;
+        }
+    }
+    &__head {
+        flex-shrink: 0;
+        width: 41.7rem;
+        margin-right: 17.7rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 9rem;
+    }
+    &__img {
+        width: 53.7rem;
+        height: 42.4rem;
+        margin-right: 4.3rem;
+        background-color: #fff;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        width: 26.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__name {
+        margin-bottom: 1.5rem;
+    }
+    &__nav {
+        left: -24.5rem;
+    }
+    &__frac {
+        color: $black;
+        top: -1rem;
+        right: auto;
+        left: 58rem;
+    }
+    @media (max-width: 48em) {
+        margin-bottom: 24rem;
+        padding-top: 9rem; 
+        &__blue {
+            width: 100vw;
+            height: 35.8rem * 2;
+            top: -9.2rem;
+            right: auto;
+            left: 0rem;
+            margin-right: -59.4rem;
+            z-index: 1;
+        }
+        &__inner {
+            display: block;
+        }
+        &__main-title {
+            margin-bottom: 2.2rem;
+        }
+        &__head {
+            width: 100%;
+            margin-right: 0rem;
+            display: block;
+            padding-bottom: 5.6rem * 2;
+        }
+        &__slider {
+        }
+        &__slide {
+            display: block;
+        }
+        &__img {
+            width: 100%;
+            height: 29.6rem * 2;
+            margin-right: 0rem;
+            margin-bottom: 5.7rem * 2;
+        }
+        &__content {
+            width: 100%;
+            display: block;
+            padding-right: 20%;
+        }
+        &__name {
+            margin-bottom: 1.5rem;
+        }
+        &__nav {
+            left: 0rem;
+            bottom: auto;
+            top: 54rem;
+        }
+        &__frac {
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: 0;
+        }
+
+    }
+}

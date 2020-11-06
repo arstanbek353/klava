@@ -1,0 +1,157 @@
+.footer {
+    background-color: $blue;
+    color: #fff;
+    padding-top: 9.7rem;
+    padding-bottom: 4.2rem;
+    &__inner {
+        margin-bottom: 6.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 25rem;
+        img {
+            width: 9.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__content {
+        padding-top: 3rem;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 11rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 2.7rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 12.6rem;
+        &--big {
+            width: 67rem;
+        }
+    }
+    &__li {
+        margin-bottom: 1.5rem;
+    }
+    @media (max-width: 48em) {
+        padding-bottom: 5.2rem;
+        &__inner {
+            display: block;
+            position: relative;
+            margin-bottom: 4.5rem;
+        }
+        &__logo {
+            width: 22.7rem * 2;
+            img {
+                width: 13.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding-top: 9.5rem;
+        }
+        &__item {
+            margin-right: 0;
+        }
+        &__title {
+            margin-bottom: 4.5rem;
+        }
+        &__list {
+            height: auto;
+            display: block;
+            margin-right: 0;
+            &--big {
+                width: auto;
+            }
+        }
+        &__li {
+            margin-bottom: 2.8rem;
+        }
+    }
+}
+
+.footer-contact {
+    padding-top: 8rem;
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        font-family: $cirBold;
+        font-size: 2.5rem;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 1.6rem;
+        }
+        &--tel::before {
+            background-image: url(../img/headphones-white.svg);
+        }
+        &--mail::before {
+            background-image: url(../img/mail.svg);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 48em) {
+        padding-top: 0rem;
+        position: absolute;
+        bottom: 4rem;
+        right: 0;
+        &__item {
+            margin-bottom: 4rem;
+            font-size: 4rem;
+            &::before {
+                width: 6rem;
+                height: 6rem;
+                margin-right: 1.6rem;
+            }
+        }
+    }
+}
+
+.made {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    a {
+        text-decoration: underline;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 4.4rem;
+        height: 4.4rem;
+        background-image: url(../img/request.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-left: 0.6rem;
+    }
+    @media (max-width: 48em) {
+        font-size: 3rem;
+        &::after {
+            width: 8.8rem;
+            height: 8.8rem;
+            margin-left: 1.2rem;
+        }
+
+    }
+}

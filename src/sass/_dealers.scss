@@ -1,0 +1,70 @@
+.dealers {
+    margin-bottom: 19rem;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__head {
+        width: 51rem;
+        padding-top: 2.2rem;
+    }
+    &__main-title {
+        margin-bottom: 2.2rem;
+    }
+    &__list {
+        width: 98.4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 25%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid $border;
+        border-right: 1px solid $border;
+        &:nth-child(4n + 4) {
+            border-right: none;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            border-top: none;
+        }
+        img {
+            height: 100%;
+            max-height: 32%;
+            width: 100%;
+            max-width: 80%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    @media (max-width: 48em) {
+        margin-bottom: 18rem;
+        &__inner {
+            display: block;
+        }
+        &__head {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        &__list {
+            width: 100%;
+        }
+        &__item {
+            width: 50%;
+            height: 21.2rem;
+            &:nth-child(4n + 4), 
+            &:nth-child(2n + 2) {
+                border-right: none;
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                border-top: 1px solid $border;
+            }
+        }
+    }
+}

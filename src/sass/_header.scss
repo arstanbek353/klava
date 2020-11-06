@@ -1,0 +1,179 @@
+.header {
+    width: 100%;
+    height: 21.3rem;
+    padding-top: 2.8rem;
+    background-image: url(../img/menu-bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+    &__logo {
+        margin-right: 0.7rem;
+    }
+    &__top {
+        padding: 0 3.2rem;
+        padding-bottom: 1.4rem;
+        border-bottom: 1px solid #fff;
+    }
+    &__nav {
+        padding: 0 3.2rem;
+    }
+    @media (max-width: 48em) {
+        height: auto;
+        padding-top: 0;
+        background-image: none;
+        background-color: $blue;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $blue;
+            z-index: 200;
+        }
+        &__inner {
+            height: 7.4rem * 2;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__content {
+            position: fixed;
+            left: 100%;
+            top: 0;
+        }
+        &__top {
+            display: none;
+        }
+        &__nav {
+            padding: 0 4rem;
+        }
+    }
+}
+.logo {
+    display: inline-block;
+    img {
+        width: 10.9rem;
+    }
+    @media (max-width: 48em) {
+        position: relative;
+        z-index: 250;
+        img {
+            width: 5.4rem * 2;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    &__item {
+        font-family: $cirBold;
+        font-size: 2.2rem;
+        line-height: 1.45;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 7.1rem;
+        &--tel {
+            margin-right: 8.5rem;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 3.3rem;
+                height: 3.3rem;
+                background-image: url(../img/headphones.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-left: 0.9rem;
+            }
+        }
+        &--whatsapp {
+            font-size: 0;
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-image: url(../img/menu-tel.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.burger {
+    width: 3.5rem * 2;
+    height: 2.6rem * 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    position: relative;
+    span {
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        background-color: #fff;
+        opacity: 1;
+        transition: 600ms;
+    }
+    &__x {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/close-menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0;
+        transition: 600ms;
+    }
+    @media (max-width: 48em) {
+        display: flex;
+        position: relative;
+        z-index: 250;
+        &.active {
+            &>span {
+                opacity: 0;
+                transition: 600ms;
+            }
+            .burger__x {
+                opacity: 1;
+                transition: 600ms;
+            }
+        }
+    }
+
+}
+
+.mob-tel {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../img/mob-tel.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: none;
+    @media (max-width: 48em) {
+        display: inline-block;
+        position: relative;
+        z-index: 250;
+    }
+
+}

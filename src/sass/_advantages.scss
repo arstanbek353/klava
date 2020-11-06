@@ -1,0 +1,58 @@
+.advantages {
+    padding-top: 10.8rem;
+    padding-bottom: 28.2rem;
+    background-image: url(../img/advantages-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 121rem;
+    background-position: right bottom -11rem;
+    &__main-title {
+        margin-bottom: 10rem;
+    }
+    &__inner {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 18.1rem;
+        grid-row-gap: 7.5rem;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.3rem;
+    }
+    &__img {
+        flex-shrink: 0;
+        width: 7.1rem;
+        height: 7.1rem;
+        margin-right: 2.6rem;
+    }
+    &__title {
+        padding-right: 20%;
+    }
+    @media (max-width: 48em) {
+        padding-top: 11.8rem;
+        padding-bottom: 12.5rem;
+        background-position: right -25rem top -17rem;
+        background-size: 160rem;
+        &__main-title {
+            margin-bottom: 7.4rem;
+        }
+        &__inner {
+            display: block;
+        }
+        &__item {
+            margin-bottom: 10.2rem;
+        }
+        &__head {
+            margin-bottom: 1.6rem;
+        }
+        &__img {
+            width: 10.2rem;
+            height: 10.2rem;
+            margin-right: 3.2rem;
+        }
+        &__title {
+            padding-right: 0%;
+        }
+    }
+}

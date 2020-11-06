@@ -1,0 +1,367 @@
+.banner-text {
+    position: relative;
+    z-index: 5;
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+    &--right {
+        padding-top: 6.6rem;
+        text-align: right;
+        .banner-text__title {
+            padding-left: 67%;
+        }
+        .banner-text__subtitle {
+            padding-left: 76%;
+        }
+    }
+    &--left {
+        padding-top: 32rem;
+        .banner-text__title {
+            padding-right: 60%;
+            margin-bottom: 4rem;
+        }
+        .banner-text__subtitle {
+            padding-right: 64%;
+        }
+    }
+    &--center {
+        text-align: center;
+        width: 102.4rem;
+        margin: 0 auto;
+        padding-top: 32rem;
+        .banner-text__subtitle {
+            padding: 0 9%;
+        }
+    }
+    &__list {
+        padding-right: 59%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
+    @media (max-width: 48em) {
+        &__title {
+            margin-bottom: 4rem;
+        }
+        &--right {
+            padding-top: 0rem;
+            text-align: center;
+            .banner-text__title {
+                padding-left: 0%;
+            }
+            .banner-text__subtitle {
+                padding-left: 0%;
+            }
+        }
+        &--left {
+            padding-top: 10.5rem;
+            padding-bottom: 11.5rem;
+            text-align: center;
+            .banner-text__title {
+                padding-right: 0%;
+                margin-bottom: 4rem;
+            }
+            .banner-text__subtitle {
+                padding-right: 0%;
+            }
+        }
+        &--center {
+            text-align: left;
+            width: 100%;
+            padding-top: 0rem;
+            .banner-text__subtitle {
+                padding: 0%;
+                padding-right: 7%;
+            }
+        }
+        &__list {
+            padding-right: 0%;
+            display: block;
+            li {
+                margin-bottom: 2rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.banner-main {
+    overflow: hidden;
+    &__img {
+        position: absolute;
+        left: -14rem;
+        top: 20.5rem;
+        width: 96rem;
+        z-index: 1;
+    }
+    &__inner {
+        position: relative;
+        z-index: 2;
+    }
+    @media (max-width: 48em) {
+        &__img {
+            position: static;
+            width: 107vw;
+            margin-left: -4rem;
+            margin-top: 8rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.main-category {
+    padding-left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: calc(100% - 3.7rem);
+        position: absolute;
+        top: 0;
+        background-color: $border;
+    }
+    &::before {
+        right: 31.5%;
+    }
+    &::after {
+        right: 15.5%;
+    }
+    &__item {
+        width: 33.3333%;
+        display: block;
+        padding-left: 9rem;
+        margin-bottom: 3.7rem;
+    }
+    &__img {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1.5rem;
+        color: #115AD4;
+        svg * {
+            fill: transparent;
+            stroke:  #115AD4;
+        }
+        // svg.open * {
+        //     opacity: 1;
+        // }
+        svg.active * {
+            opacity: 1;
+            fill: #115AD4;
+            stroke: transparent;
+            transition: fill transparent, stroke #115AD4;
+        }
+        // &--pipeline {
+        //     width: 5.8rem;
+        //     height: 5.8rem;
+        // }
+        // &--heating {
+        //     width: 5.2rem;
+        //     height: 4.5rem;
+        // }
+        // &--harbor-crane {
+        //     width: 5.2rem;
+        //     height: 5.2rem;
+        // }
+        // &--boiler {
+        //     width: 5.7rem;
+        //     height: 4.7rem;
+        // }
+        // &--ventilation {
+        //     width: 5.3rem;
+        //     height: 5.3rem;
+        // }
+        // &--electric {
+        //     width: 6.2rem;
+        //     height: 5.4rem;
+        // }
+        // &--air-conditioner {
+        //     width: 5.2rem;
+        //     height: 4.5rem;
+        // }
+        // &--gear {
+        //     width: 5.7rem;
+        //     height: 5.8rem;
+        // }
+        // &--tap {
+        //     width: 5.6rem;
+        //     height: 5.8rem;
+        // }
+    }
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+    @media (max-width: 48em) {
+        padding-left: 0%;
+        margin-top: 4.7rem * 2;
+        &::after {
+            display: none;
+        }
+        &::before {
+            right: 50%;
+            height: calc(100% - 12rem);
+        }
+        &__item {
+            width: 50%;
+            display: block;
+            padding-left: 5.2rem * 2;
+            padding-bottom: 2.6rem * 2;
+            margin-bottom: 6.8rem;
+            border-bottom: 1px solid #f1f2f8;
+            &:nth-child(2n + 1) {
+                padding-right: 5rem;
+                padding-left: 0;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &__img {
+            width: 12rem;
+            height: 12rem;
+            margin-bottom: 5.4rem;
+        }
+        &__title {
+            margin-bottom: 2.4rem;
+        }
+        &__text {
+            font-size: 3rem;
+            line-height: 1.3333;
+        }
+    }
+}
+
+.banner-service {
+    overflow: hidden;
+    position: relative;
+    min-height: 96.6rem;
+    margin-bottom: 15rem;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__img-mob {
+        display: none;
+    }
+    &__btn {
+        margin-top: 4.5rem;
+    }
+    @media (max-width: 48em) {
+        min-height: auto;
+        margin-bottom: 13rem;
+        &__img {
+            display: none;
+        }
+        &__img-mob {
+            display: block;
+            width: 100%;
+            height: 26.4rem * 2;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__btn {
+            margin-top: 6rem;
+        }
+    }
+}
+
+.banner-about {
+    overflow: hidden;
+    position: relative;
+    min-height: 96.6rem;
+    margin-bottom: 15rem;
+    &__img {
+        position: absolute;
+        right: -14rem;
+        top: 9.1rem;
+        width: 122rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__btn {
+        margin-top: 4.5rem;
+    }
+    @media (max-width: 48em) {
+        min-height: auto;
+        margin-bottom: 13rem;
+        padding-top: 14rem;
+        .container {
+            padding: 0;
+        }
+        &__inner {
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+        &__img {
+            position: static;
+            display: block;
+            width: 100%;
+            height: 26.4rem * 2;
+        }
+        &__btn {
+            margin-top: 6rem;
+        }
+    }
+}
+
+.banner-contact {
+    overflow: hidden;
+    position: relative;
+    min-height: 96.6rem;
+    margin-bottom: 6rem;
+    &__img {
+        position: absolute;
+        right: 9rem;
+        top: 5rem;
+        width: 76rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__btn {
+        margin-top: 4.5rem;
+    }
+    @media (max-width: 48em) {
+        min-height: auto;
+        margin-bottom: 13rem;
+        padding-top: 0rem;
+        &__inner {
+        }
+        &__img {
+            position: static;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 82%;
+                object-position: center;
+                object-fit: contain;
+            }
+        }
+        &__btn {
+            margin-top: 6rem;
+        }
+    }
+}

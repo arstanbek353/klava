@@ -1,0 +1,31 @@
+.seo-text {
+    margin-bottom: 19rem;
+    &__inner {
+        width: 83rem;
+        margin: 0 auto;
+        .h {
+            margin-bottom: 2.7rem;
+        }
+        p {
+            margin-bottom: 2.7rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 48em) {
+        margin-bottom: 22rem;
+        &__inner {
+            width: 100%;
+            .h {
+                margin-bottom: 3.7rem;
+            }
+            p {
+                margin-bottom: 4.4rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
