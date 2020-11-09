@@ -138,6 +138,16 @@
         display: block;
         padding-left: 9rem;
         margin-bottom: 3.7rem;
+        &.active, &.animated {
+            .main-category__title {
+                opacity: 1;
+                transition: opacity 6000ms;
+            }
+            .main-category__text {
+                opacity: 1;
+                transition: opacity 6000ms;
+            }
+        }
     }
     &__img {
         width: 6rem;
@@ -147,15 +157,20 @@
         svg * {
             fill: transparent;
             stroke:  #115AD4;
+            opacity: 0;
+            stroke-width: 0.8;
         }
-        // svg.open * {
-        //     opacity: 1;
-        // }
+        svg.open * {
+            opacity: 1;
+        }
         svg.active * {
             opacity: 1;
             fill: #115AD4;
             stroke: transparent;
-            transition: fill transparent, stroke #115AD4;
+            &.electric-path {
+                fill: transparent;
+                stroke:  #115AD4;
+            }
         }
         // &--pipeline {
         //     width: 5.8rem;
@@ -196,6 +211,10 @@
     }
     &__title {
         margin-bottom: 2.4rem;
+        opacity: 0;
+    }
+    &__text {
+        opacity: 0;
     }
     @media (max-width: 48em) {
         padding-left: 0%;
