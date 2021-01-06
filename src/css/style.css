@@ -121,13 +121,18 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+.voda {
+  stroke-width: 1rem; }
+
 @media (max-width: 108em) {
   html {
     font-size: 9px; } }
 
 @media (max-width: 105em) {
   html {
-    font-size: 8.5px; } }
+    font-size: 8.5px; }
+  .voda {
+    stroke-width: 1.1rem; } }
 
 @media (max-width: 91em) {
   html {
@@ -135,7 +140,9 @@ input[type=number] {
 
 @media (max-width: 90em) {
   html {
-    font-size: 7.5px; } }
+    font-size: 7.5px; }
+  .voda {
+    stroke-width: 1.2rem; } }
 
 @media (max-width: 85em) {
   html {
@@ -143,7 +150,9 @@ input[type=number] {
 
 @media (max-width: 80em) {
   html {
-    font-size: 6.8px; } }
+    font-size: 6.8px; }
+  .voda {
+    stroke-width: 1.6rem; } }
 
 @media (max-width: 72em) {
   html {
@@ -155,7 +164,9 @@ input[type=number] {
 
 @media (max-width: 64em) {
   html {
-    font-size: 5.6px; } }
+    font-size: 5.6px; }
+  .voda {
+    stroke-width: 1.8rem; } }
 
 @media (max-width: 60em) {
   html {
@@ -178,35 +189,51 @@ input[type=number] {
   .container {
     padding: 0 4rem;
     margin: 0 auto;
-    width: 100%; } }
+    width: 100%; }
+  .voda {
+    stroke-width: 1.15rem; } }
 
 @media (max-width: 44em) {
   html {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .voda {
+    stroke-width: 1.3rem; } }
 
 @media (max-width: 38em) {
   html {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .voda {
+    stroke-width: 1.4rem; } }
 
 @media (max-width: 34em) {
   html {
-    font-size: 7px; } }
+    font-size: 7px; }
+  .voda {
+    stroke-width: 1.4rem; } }
 
 @media (max-width: 30em) {
   html {
-    font-size: 6px; } }
+    font-size: 6px; }
+  .voda {
+    stroke-width: 1.8rem; } }
 
 @media (max-width: 26em) {
   html {
-    font-size: 5px; } }
+    font-size: 5px; }
+  .voda {
+    stroke-width: 1.85rem; } }
 
 @media (max-width: 22.5em) {
   html {
-    font-size: 4.5px; } }
+    font-size: 4.5px; }
+  .voda {
+    stroke-width: 1.9rem; } }
 
 @media (max-width: 21em) {
   html {
-    font-size: 4.4px; } }
+    font-size: 4.4px; }
+  .voda {
+    stroke-width: 2rem; } }
 
 .body-page {
   font-size: 1.8rem;
@@ -864,6 +891,243 @@ input[type=number] {
       margin-top: 8rem;
       margin-bottom: 4rem; } }
 
+@keyframes voda {
+  0% {
+    stroke-dashoffset: 130; }
+  25% {
+    stroke-dashoffset: -130; }
+  50% {
+    stroke-dashoffset: -130; }
+  75% {
+    stroke-dashoffset: 130; }
+  100% {
+    stroke-dashoffset: 130; } }
+
+@keyframes teplo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes dym1 {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  33% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  65% {
+    opacity: 0; }
+  81% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes dym2 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  49% {
+    opacity: 1; }
+  65% {
+    opacity: 1; }
+  81% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes dym3 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 0; }
+  33% {
+    opacity: 0; }
+  49% {
+    opacity: 1; }
+  65% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes veter {
+  0% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: -980; } }
+
+@keyframes lopast {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(-360deg); } }
+
+@keyframes discharg {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes snowflake {
+  0% {
+    transform: translateX(-1.8rem);
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateX(2.5rem);
+    opacity: 0; } }
+
+@keyframes snowflakeMob {
+  0% {
+    transform: translateX(-3rem);
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateX(3.5rem);
+    opacity: 0; } }
+
+@keyframes s-kran {
+  0% {
+    transform: translateY(0rem); }
+  20% {
+    transform: translateY(1.7rem); }
+  65% {
+    transform: translateY(-1rem); }
+  80% {
+    transform: translateY(0rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes kaply {
+  0% {
+    transform: translateY(-2.5rem); }
+  100% {
+    transform: translateY(2.2rem); } }
+
+.voda {
+  stroke: #115ad4;
+  fill: transparent;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130; }
+
+.teplo {
+  width: 2.7rem;
+  height: 2.1rem;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; }
+  @media (max-width: 48em) {
+    .teplo {
+      width: 5.4rem;
+      height: 4.2rem; } }
+
+.dym {
+  width: 2.7rem;
+  height: 2.1rem;
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  transform: translateX(0%); }
+  .dym path {
+    opacity: 0; }
+  @media (max-width: 48em) {
+    .dym {
+      width: 5.4rem;
+      height: 4.2rem; } }
+
+.veter {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1rem);
+  transform: translateY(-50%) scale(-1, 1);
+  stroke: #115ad4;
+  stroke-width: 0.2rem; }
+  .veter path {
+    stroke-dasharray: 35;
+    stroke-dashoffset: -980;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.05, 0.94, 0.2);
+    animation-timing-function: ease-out;
+    stroke-width: 0.4rem;
+    stroke: #115ad4;
+    fill: none;
+    opacity: 0; }
+  .veter path:nth-child(2) {
+    animation-delay: 70ms; }
+  .veter path:nth-child(3) {
+    animation-delay: 120ms; }
+  @media (max-width: 48em) {
+    .veter {
+      width: 4.8rem;
+      height: 4.8rem; } }
+
+.lopast {
+  transform: rotate(0);
+  transform-origin: center; }
+
+.electric-path {
+  fill: transparent;
+  stroke: #115AD4; }
+
+.discharg {
+  opacity: 0; }
+
+.discharg-3, .discharg-4 {
+  animation-delay: 0.5s; }
+
+.snowflake {
+  width: 5.7rem;
+  height: 4rem;
+  fill: #115ad4;
+  position: absolute;
+  top: 1rem;
+  left: 100%;
+  overflow: hidden; }
+  @media (max-width: 48em) {
+    .snowflake {
+      top: 2rem;
+      width: 11.4rem;
+      height: 8rem; } }
+
+.snowflake path {
+  transform: translateX(-1.8rem); }
+
+.snowflake path:nth-child(1) {
+  animation-delay: 1s; }
+
+#air-conditioner .lopast {
+  transform-origin: 33% 46.3%;
+  animation-direction: reverse; }
+
 .main-category {
   padding-left: 50%;
   display: flex;
@@ -886,37 +1150,88 @@ input[type=number] {
     width: 33.3333%;
     display: block;
     padding-left: 9rem;
-    margin-bottom: 3.7rem; }
+    margin-bottom: 3.7rem;
+    transform: scale3d(1, 1, 1);
+    transition: transform 600ms; }
     .main-category__item.active .main-category__title, .main-category__item.animated .main-category__title {
       opacity: 1;
       transition: opacity 6000ms; }
     .main-category__item.active .main-category__text, .main-category__item.animated .main-category__text {
       opacity: 1;
       transition: opacity 6000ms; }
+    .main-category__item:hover {
+      transform: scale3d(1.1, 1.1, 1.1);
+      transition: transform 600ms; }
+      .main-category__item:hover .voda {
+        animation-name: voda;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .teplo {
+        animation-name: teplo;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+        animation-delay: 0s; }
+      .main-category__item:hover .dym path {
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        animation-delay: 0s; }
+      .main-category__item:hover .dym path:nth-child(1) {
+        animation-name: dym1; }
+      .main-category__item:hover .dym path:nth-child(3) {
+        animation-name: dym2; }
+      .main-category__item:hover .dym path:nth-child(2) {
+        animation-name: dym3; }
+      .main-category__item:hover .veter path {
+        animation-name: veter;
+        animation-timing-function: linear;
+        opacity: 1; }
+      .main-category__item:hover .lopast {
+        animation-name: lopast;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .discharg {
+        animation-name: discharg;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .snowflake path {
+        animation-name: snowflake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .gear {
+        animation-name: lopast;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .gruz {
+        animation-name: s-kran;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+      .main-category__item:hover .kaply {
+        animation-name: kaply;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in; }
   .main-category__img {
     width: 6rem;
     height: 6rem;
     margin-bottom: 1.5rem;
-    color: #115AD4; }
-    .main-category__img svg * {
-      fill: transparent;
-      stroke: #115AD4;
-      opacity: 0;
-      stroke-width: 0.8; }
-    .main-category__img svg.open * {
-      opacity: 1; }
-    .main-category__img svg.active * {
-      opacity: 1;
-      fill: #115AD4;
-      stroke: transparent; }
-      .main-category__img svg.active *.electric-path {
-        fill: transparent;
-        stroke: #115AD4; }
+    color: #115AD4;
+    position: relative;
+    fill: #115AD4; }
   .main-category__title {
     margin-bottom: 2.4rem;
-    opacity: 0; }
+    opacity: 0;
+    opacity: 1; }
   .main-category__text {
-    opacity: 0; }
+    opacity: 0;
+    opacity: 1; }
   @media (max-width: 48em) {
     .main-category {
       padding-left: 0%;
@@ -938,6 +1253,62 @@ input[type=number] {
           padding-left: 0; }
         .main-category__item:last-child {
           border-bottom: none; }
+        .main-category__item.active .voda {
+          animation-name: voda;
+          animation-duration: 15s;
+          animation-fill-mode: forwards;
+          animation-timing-function: linear; }
+        .main-category__item.active .teplo {
+          animation-name: teplo;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-duration: 1.5s;
+          animation-delay: 0s; }
+        .main-category__item.active .dym path {
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-duration: 2s;
+          animation-delay: 0s; }
+        .main-category__item.active .dym path:nth-child(1) {
+          animation-name: dym1; }
+        .main-category__item.active .dym path:nth-child(3) {
+          animation-name: dym2; }
+        .main-category__item.active .dym path:nth-child(2) {
+          animation-name: dym3; }
+        .main-category__item.active .veter path {
+          animation-name: veter;
+          animation-timing-function: linear;
+          opacity: 1; }
+        .main-category__item.active .lopast {
+          animation-name: lopast;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+        .main-category__item.active .discharg {
+          animation-name: discharg;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+        .main-category__item.active .snowflake path {
+          animation-name: snowflakeMob;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+        .main-category__item.active .gear {
+          animation-name: lopast;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+        .main-category__item.active .gruz {
+          animation-name: s-kran;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+        .main-category__item.active .kaply {
+          animation-name: kaply;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in; }
       .main-category__img {
         width: 12rem;
         height: 12rem;
@@ -963,6 +1334,19 @@ input[type=number] {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    .banner-service__img::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 250rem;
+      height: 96.6rem;
+      background-image: url(../img/banner-mask.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center top; }
   .banner-service__img-mob {
     display: none; }
   .banner-service__btn {
@@ -1448,7 +1832,7 @@ input[type=number] {
       border-top: none; }
     .dealers__item img {
       height: 100%;
-      max-height: 32%;
+      max-height: 60%;
       width: 100%;
       max-width: 80%;
       object-fit: contain;
@@ -1591,6 +1975,12 @@ input[type=number] {
   .request__text {
     padding-right: 20%;
     margin-bottom: 2rem; }
+  .request__input-msg {
+    position: absolute;
+    top: 100%;
+    color: red;
+    width: 100%;
+    border-top: 1px solid red; }
   @media (max-width: 48em) {
     .request {
       margin-bottom: 24rem; }
@@ -1623,6 +2013,8 @@ input[type=number] {
   padding-top: 1.5rem;
   position: relative;
   z-index: 1; }
+  .form__placeholder.active {
+    display: none; }
 
 .form input, .form textarea {
   position: absolute;
@@ -1654,6 +2046,12 @@ input[type=number] {
 
 .form__button {
   margin-top: 4.5rem; }
+
+.form__conf {
+  margin-top: 3rem; }
+  .form__conf a {
+    text-decoration: underline;
+    color: #407BFF; }
 
 .form__msg {
   position: fixed;
@@ -1709,6 +2107,8 @@ input[type=number] {
     padding-top: 4rem; }
   .form__button {
     margin-top: 10.5rem; }
+  .form__conf {
+    margin-top: 6rem; }
   .form__msg {
     align-items: stretch;
     padding: 5%; }
@@ -1776,6 +2176,8 @@ input[type=number] {
     margin-top: 3rem;
     padding-top: 3rem;
     border-top: 1px solid #f1f2f8; }
+  .content--conf {
+    padding-top: 30rem; }
   @media (max-width: 48em) {
     .content {
       margin-bottom: 21rem; }
@@ -1803,7 +2205,9 @@ input[type=number] {
       .content__subtitle {
         font-size: 3.6rem;
         margin-top: 0rem;
-        padding-top: 5rem; } }
+        padding-top: 5rem; }
+      .content--conf {
+        padding-top: 7rem; } }
 
 .contact-list {
   width: 67.4rem;

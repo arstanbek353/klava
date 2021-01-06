@@ -37,6 +37,9 @@
         padding-top: 3rem;
         border-top: 1px solid $border;
     }
+    &--conf {
+        padding-top: 30rem;
+    }
     @media (max-width: 48em) {
         margin-bottom: 21rem;
         &__inner {
@@ -73,6 +76,9 @@
             font-size: 3.6rem;
             margin-top: 0rem;
             padding-top: 5rem;
+        }
+        &--conf {
+            padding-top: 7rem;
         }
     }
 }

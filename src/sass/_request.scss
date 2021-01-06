@@ -17,6 +17,13 @@
         padding-right: 20%;
         margin-bottom: 2rem;
     }
+    &__input-msg {
+        position: absolute;
+        top: 100%;
+        color: red;
+        width: 100%;
+        border-top: 1px solid red;
+    }
     @media (max-width: 48em) {
         margin-bottom: 24rem;
         &__container {
@@ -55,6 +62,9 @@
         padding-top: 1.5rem;
         position: relative;
         z-index: 1;
+        &.active {
+            display: none;
+        }
     }
     input, textarea {
         position: absolute;
@@ -85,6 +95,13 @@
     }
     &__button {
         margin-top: 4.5rem;
+    }
+    &__conf {
+        margin-top: 3rem;
+        a {
+            text-decoration: underline;
+            color: $blue;
+        }
     }
     &__msg {
         position: fixed;
@@ -145,6 +162,9 @@
         }
         &__button {
             margin-top: 10.5rem;
+        }
+        &__conf {
+            margin-top: 6rem;
         }
         &__msg {
             align-items: stretch;

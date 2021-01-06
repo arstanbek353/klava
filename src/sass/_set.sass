@@ -13,38 +13,36 @@ html
   background-color: #fff
   color: #000
 
-
 body, input, textarea
   font-family: $cirReg
   font-size: 62.5%
   font-style: normal
   font-weight: normal
   -webkit-animation: bugfix infinite 1s
-  line-height: 1.2  
-  position: relative 
+  line-height: 1.2
+  position: relative
   margin: 0
   padding: 0
 
+a, a:hover
+  text-decoration: none
 
-a, a:hover 
-	text-decoration: none
+button, input, a, textarea
+  outline: none
+  cursor: pointer
+  &:focus
+    outline: none
+  &:active
+    outline: none
 
-button, input, a, textarea 
-	outline: none
-	cursor: pointer
-	&:focus 
-		outline: none
-	&:active 
-		outline: none
+h1, h2, h3, h4, h5, h6
+  display: block
+  width: 100%
+  font-size: unset
+  margin: 0
+  padding: 0
 
-h1, h2, h3, h4, h5, h6 
-	display: block
-	width: 100%
-	font-size: unset
-	margin: 0
-	padding: 0
-
-p 
+p
   margin-top: 0
   margin-bottom: 0
 
@@ -54,126 +52,146 @@ a
 img
   width: 100%
 .btn
-	border: none
+  border: none
 
-ul 
-	padding: 0
-	margin: 0
+ul
+  padding: 0
+  margin: 0
 
 ul li
-	margin: 0
-	padding: 0
-	list-style: none		
+  margin: 0
+  padding: 0
+  list-style: none
 
 .container
-	width: 164rem
-	margin: 0 auto
-	position: relative
-	max-width: unset
+  width: 164rem
+  margin: 0 auto
+  position: relative
+  max-width: unset
 
 .hidden
-	overflow: hidden
+  overflow: hidden
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
-	-webkit-appearance: none
-	margin: 0
-
+  -webkit-appearance: none
+  margin: 0
 
 input[type=number]
-	-moz-appearance: textfield
+  -moz-appearance: textfield
 
-@media (max-width: 108em) 
-  html 
+.voda
+  stroke-width: 1rem
+@media (max-width: 108em)
+  html
     font-size: 9px
 
-
-@media (max-width: 105em) 
-  html 
+@media (max-width: 105em)
+  html
     font-size: 8.5px
+  .voda
+    stroke-width: 1.1rem
 
-
-@media (max-width: 91em) 
-  html 
+@media (max-width: 91em)
+  html
     font-size: 8px
 
-
-@media (max-width: 90em) 
-  html 
+@media (max-width: 90em)
+  html
     font-size: 7.5px
+  .voda
+    stroke-width: 1.2rem
 
-@media (max-width: 85em) 
-  html 
+@media (max-width: 85em)
+  html
     font-size: 7.3px
 
-@media (max-width: 80em) 
-  html 
+@media (max-width: 80em)
+  html
     font-size: 6.8px
+  .voda
+    stroke-width: 1.6rem
 
-@media (max-width: 72em) 
-  html 
+@media (max-width: 72em)
+  html
     font-size: 6.5px
 
 @media (max-width: 68em)
-    html
-        font-size: 6.1px  
+  html
+    font-size: 6.1px
 
 @media (max-width: 64em)
-    html
-        font-size: 5.6px  
+  html
+    font-size: 5.6px
+  .voda
+    stroke-width: 1.8rem
 
 @media (max-width: 60em)
-    html
-        font-size: 5.2px  
+  html
+    font-size: 5.2px
 
 @media (max-width: 55em)
-    html
-        font-size: 4.8px 
+  html
+    font-size: 4.8px
 
 @media (max-width: 51em)
-    html
-        font-size: 4.5px 
-    
+  html
+    font-size: 4.5px
 
-@media (max-width: 48em) 
+@media (max-width: 48em)
 
-  html 
+  html
     font-size: 10px
     -webkit-text-size-adjust: none
 
-
-  body 
+  body
     -webkit-text-size-adjust: none
-  
+
   .container
     padding: 0 4rem
     margin: 0 auto
     width: 100%
+  .voda
+    stroke-width: 1.15rem
 
 @media (max-width: 44em)
   html
-      font-size: 9px 
+    font-size: 9px
+  .voda
+    stroke-width: 1.3rem
 
 @media (max-width: 38em)
   html
-      font-size: 8px 
+    font-size: 8px
+  .voda
+    stroke-width: 1.4rem
 
 @media (max-width: 34em)
   html
-      font-size: 7px 
+    font-size: 7px
+  .voda
+    stroke-width: 1.4rem
 
 @media (max-width: 30em)
   html
-      font-size: 6px 
+    font-size: 6px
+  .voda
+    stroke-width: 1.8rem
 
 @media (max-width: 26em)
   html
-      font-size: 5px       
+    font-size: 5px
+  .voda
+    stroke-width: 1.85rem
 
 @media (max-width: 22.5em)
   html
-      font-size: 4.5px 
+    font-size: 4.5px
+  .voda
+    stroke-width: 1.9rem
 
 @media (max-width: 21em)
   html
-      font-size: 4.4px    
+    font-size: 4.4px
+  .voda
+    stroke-width: 2rem
